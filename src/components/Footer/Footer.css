@@ -1,4 +1,25 @@
-footer {
-  padding: 100px 0 50px 0;
-  background: rgba(150, 150, 150)
+.footer-wrapper {
+  padding: 50px 0 100px 0;
+  background: gainsboro;
+}
+
+.footer-wrapper * {
+  color: gray;
+}
+
+.footer-copywrite {
+  float: left;
+  font-size: 24px;
+}
+
+.ul-social {
+  display: flex;
+  float: right;
+  list-style: none;
+}
+
+.ul-social * {
+  font-size: 37px;
+  margin-left: 30px;
+  float: left;
 }

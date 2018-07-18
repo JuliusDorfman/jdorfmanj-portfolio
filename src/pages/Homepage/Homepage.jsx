@@ -11,22 +11,28 @@ export default class Homepage extends Component {
 
         <Header />
 
-        <div class="container">
+        <div className="container">
 
-          <div class="landing-intro">
+          <div className="landing-intro">
             <h1>Julius G. Dorfman</h1>
+            <p className="work-intro">
+              Of the mind that in simplicity is beauty.
+              <br />
+              But also complexity is fun.<i className="fas fa-grin-wink"></i>
+            </p>
           </div>
+
         </div>
 
 
-        <div class="content">
+        <div className="content">
 
-          <div class="portfolio">
-            <div class="project-row">
+          <div className="portfolio">
+            <div className="project-row">
 
-              <div class="project-container">
-                <div class="project" id="proj-1">
-                  <div class="project-overlay">
+              <div className="project-container">
+                <div className="project" id="proj-1">
+                  <div className="project-overlay">
                     <h3>Project Title</h3>
                     <p>
                       Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus
@@ -37,9 +43,9 @@ export default class Homepage extends Component {
                 </div>
               </div>
 
-              <div class="project-container">
-                <div class="project" id="proj-2">
-                  <div class="project-overlay">
+              <div className="project-container">
+                <div className="project" id="proj-2">
+                  <div className="project-overlay">
                     <h3>Project Title</h3>
                     <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.
                       Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless
@@ -50,11 +56,11 @@ export default class Homepage extends Component {
               </div>
 
             </div>
-            <div class="project-row">
+            <div className="project-row">
 
-              <div class="project-container">
-                <div class="project" id="proj-3">
-                  <div class="project-overlay">
+              <div className="project-container">
+                <div className="project" id="proj-3">
+                  <div className="project-overlay">
                     <h3>Project Title</h3>
                     <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.
                       Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless
@@ -64,9 +70,9 @@ export default class Homepage extends Component {
                 </div>
               </div>
 
-              <div class="project-container">
-                <div class="project" id="proj-4">
-                  <div class="project-overlay">
+              <div className="project-container">
+                <div className="project" id="proj-4">
+                  <div className="project-overlay">
                     <h3>Project Title</h3>
                     <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis.
                       Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless
@@ -79,8 +85,8 @@ export default class Homepage extends Component {
             </div>
           </div>
 
-          <div class="page-detail">
-
+          <div className="page-detail">
+            <p>Enjoy This Beautiful Use of Whitespace</p>
           </div>
         </div>
         <Footer />

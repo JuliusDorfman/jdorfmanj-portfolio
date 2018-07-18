@@ -5,9 +5,9 @@ export default class Header extends Component {
   render() {
     return (
       <header>
-        <div class="container">
+        <div className="container">
           <nav>
-            <ul class="nav-menu">
+            <ul className="nav-menu">
               <li>
                 <a href="/">Work</a>
               </li>

@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import Header from "../../components/Header";
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import './About.css';
 
 export default class About extends Component {
 
-
-
-
-
-
-  
 
 
   render() {
@@ -17,25 +13,26 @@ export default class About extends Component {
 
         <Header />
 
-        <div class="content">
+        <div className="content">
 
-          <div class="container">
-            <div class="landing-intro">
+          <div className="container">
+            <div className="about-me-intro">
               <h1>About Me!</h1>
             </div>
           </div>
 
           <div className="container">
-            <div className="about-me-intro">
-            Hi, I'm Julius. I'm a 
+            <div className="about-me">
+              <p>Hi, I'm Julius. Developer most of the time. Cool Nerd with an active lifestyle the rest of the time.</p>
+              <p>Let's build something Nice.</p>
             </div>
           </div>
 
-          <div class="page-detail">
+          <div className="page-detail">
 
           </div>
         </div>
-
+        <Footer />
       </div>
     )
   }
