@@ -1,0 +1,151 @@
+/* Layout */
+
+* {
+  font-family: 'Expletus Sans', cursive;
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  margin: 0;
+}
+
+.page-detail{
+  height: 200px;
+}
+
+/* Portfolio */
+
+.landing-intro {
+  padding-bottom: 200px;
+  text-align: left;
+}
+
+.landing-intro h1 {
+  font-size: 52px;
+  line-height: 70px;
+}
+
+.portfolio {
+  display: flex;
+  height: 100vh;
+}
+
+.project {
+  height: 50vh;
+  overflow: hidden;
+}
+
+.project-row {
+  flex-direction: row;
+}
+
+.project-overlay {
+  position: relative;
+  top: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, .6)
+}
+
+.project-overlay h3 {
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+}
+
+.project-overlay p {
+  margin: 0;
+  padding: 2%;
+  text-align: left;
+}
+
+@media (max-width: 750px) {
+  .portfolio {
+    flex-direction: column;
+  }
+}
+
+/* Projects */
+
+/* Project One */
+
+#proj-1 {
+  background: palegoldenrod;
+}
+
+#proj-2 {
+  background: palegreen;
+}
+
+#proj-3 {
+  background: paleturquoise;
+}
+
+#proj-4 {
+  background: palevioletred;
+}
+
+#proj-3 {
+  overflow: hidden;
+  background: url('/assets/images/red-bg-light.jpg');
+}
+
+/* Custom Animation */
+
+/* .crystal-ruby {
+  position: absolute;
+  height: 20%;
+  left: 10%;
+  opacity: .3;
+  transform: rotate(-30deg);
+  overflow: hidden;
+  animation: fallingCrystals 12s infinite linear;
+}
+
+.crystal-diamond {
+  position: absolute;
+  height: 20%;
+  left: 20%;
+  opacity: .6;
+  transform: rotate(45deg);
+  overflow: hidden;
+  animation: fallingCrystals 6s infinite linear;
+}
+
+.crystal-sapphire {
+  position: absolute;
+  height: 20%;
+  left: 50%;
+  opacity: .5;
+  transform: rotate(-20deg);
+  overflow: hidden;
+  animation: fallingCrystals 5s infinite linear;
+}
+
+.crystal-emerald {
+  position: absolute;
+  height: 10%;
+  left: 75%;
+  opacity: .4;
+  transform: rotate(25deg);
+  overflow: hidden;
+  animation: fallingCrystals 7s infinite linear;
+} */
+
+/* 
+@keyframes fallingCrystals {
+  0% {
+    top: -160px;
+  }
+  100% {
+    top: 1000px;
+  }
+} */
+
+/* Footer */
+
