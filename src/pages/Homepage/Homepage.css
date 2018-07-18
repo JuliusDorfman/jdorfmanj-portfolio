@@ -7,8 +7,7 @@
 .container {
   display: block;
   position: relative;
-  width: 80%;
-  margin: auto;
+  margin: auto 120px;
 }
 
 body {
@@ -23,17 +22,52 @@ body {
   display: block;
   text-align: left;
   margin: 0;
-  width: 600px;
   font-size: 23px;
   color: gray;
   line-height: 150%;
 }
+
+/* Scroll Down Element */
+
+/* Scroll Down Button */
+
+@keyframes downbounce {
+  0% {}
+  25% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.scroll-down-button {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10%;
+  position: absolute;
+  color: AliceBlue;
+  font-size: 4rem;
+  animation: "downbounce" infinite 20s ease-in-out;
+  cursor: pointer;
+}
+
+
 
 /* Portfolio */
 
 .landing-intro {
   padding-bottom: 200px;
   text-align: left;
+  color: #333;
 }
 
 .landing-intro h1 {
@@ -43,7 +77,6 @@ body {
 
 .portfolio {
   display: flex;
-  height: 100vh;
 }
 
 .project {
@@ -53,25 +86,34 @@ body {
 
 .project-row {
   flex-direction: row;
+  flex: 1;
 }
 
 .project-overlay {
   position: relative;
   top: 0;
   height: 100%;
-  background: rgba(255, 255, 255, .6)
+  padding-top: 30px;
+  background: rgba(255, 255, 255, .6);
+  color: #333;
 }
 
 .project-overlay h3 {
+  display: inline-block;
   margin: 0;
   padding: 2%;
   text-align: center;
 }
 
+.project-overlay a {
+  text-decoration: none;
+  color: #333;
+}
+
 .project-overlay p {
   margin: 0;
   padding: 2%;
-  text-align: left;
+  text-align: center;
 }
 
 .page-detail {
@@ -85,8 +127,18 @@ body {
 }
 
 @media (max-width: 750px) {
+  .container {
+    margin: auto 40px;
+  }
   .portfolio {
     flex-direction: column;
+  }
+  .landing-intro h1 {
+    font-size: 27px;
+  }
+  .work-intro {
+    font-size: 17px;
+    line-height: 200%;
   }
 }
 
@@ -117,9 +169,9 @@ body {
 
 /* Custom Animation */
 
-/* .crystal-ruby {
+.crystal-ruby {
   position: absolute;
-  height: 20%;
+  height: 30%;
   left: 10%;
   opacity: .3;
   transform: rotate(-30deg);
@@ -129,7 +181,7 @@ body {
 
 .crystal-diamond {
   position: absolute;
-  height: 20%;
+  height: 40%;
   left: 20%;
   opacity: .6;
   transform: rotate(45deg);
@@ -139,7 +191,7 @@ body {
 
 .crystal-sapphire {
   position: absolute;
-  height: 20%;
+  height: 40%;
   left: 50%;
   opacity: .5;
   transform: rotate(-20deg);
@@ -149,15 +201,15 @@ body {
 
 .crystal-emerald {
   position: absolute;
-  height: 10%;
+  height: 30%;
   left: 75%;
   opacity: .4;
   transform: rotate(25deg);
   overflow: hidden;
   animation: fallingCrystals 7s infinite linear;
-} */
+} 
 
-/* 
+
 @keyframes fallingCrystals {
   0% {
     top: -160px;
@@ -165,6 +217,6 @@ body {
   100% {
     top: 1000px;
   }
-} */
+} 
 
-/* Footer */
+
