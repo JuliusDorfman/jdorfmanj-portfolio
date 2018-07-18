@@ -45,7 +45,7 @@ export default class Homepage extends Component {
               <div className="project-container">
                 <div className="project" id="proj-1">
                   <div className="project-overlay">
-                    <div className="container">
+                    <div className="project-center">
                       <a
                         href="https://news-from.herokuapp.com/"
                         target="_blank"
@@ -64,7 +64,7 @@ export default class Homepage extends Component {
               <div className="project-container">
                 <div className="project" id="proj-3">
                   <div className="project-overlay">
-                    <div className="container">
+                    <div className="project-center">
                       <a
                         href="https://crystal-numbers.herokuapp.com/"
                         target="_blank"
@@ -106,7 +106,7 @@ export default class Homepage extends Component {
               <div className="project-container">
                 <div className="project" id="proj-2">
                   <div className="project-overlay">
-                    <div className="container">
+                    <div className="project-center">
                       <a
                         href="https://juliusdorfman.github.io/imagEdits/"
                         target="_blank"
@@ -123,7 +123,7 @@ export default class Homepage extends Component {
               <div className="project-container">
                 <div className="project" id="proj-4">
                   <div className="project-overlay">
-                    <div className="container">
+                    <div className="project-center">
                       <a
                         href="https://github.com/JuliusDorfman/liri-node-app"
                         target="_blank"
