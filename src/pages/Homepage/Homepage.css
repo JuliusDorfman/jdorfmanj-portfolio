@@ -148,7 +148,12 @@ body {
 /* Project One */
 
 #proj-1 {
-  background: palegoldenrod;
+  background: url('/assets/images/transparent_squiggle.png');
+  background-position-y: -200px;
+}
+
+#proj-1 .project-overlay {
+  background: rgba(255, 255, 160, 0.9);
 }
 
 #proj-2 {
@@ -178,6 +183,13 @@ body {
 
 #proj-4 {
   background: palevioletred;
+}
+
+#proj-4 .project-center {
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 10%;
+  color: #333;
 }
 
 /* Custom Animation */
