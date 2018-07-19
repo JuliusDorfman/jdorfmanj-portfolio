@@ -35,3 +35,9 @@
   list-style: none;
   color: gray;
 }
+
+@media (max-width: 750px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+}
