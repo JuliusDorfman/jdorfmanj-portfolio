@@ -27,20 +27,23 @@ body {
   line-height: 150%;
 }
 
+.work-intro-flavor {
+  margin: 0 0 0 10px; 
+}
+
 /* Scroll Down Element */
 
 /* Scroll Down Button */
 
 @keyframes downbounce {
-  0% {}
   25% {
-    transform: translateY(-50px);
+    transform: translateY(50px);
   }
   50% {
     transform: translateY(0px);
   }
   75% {
-    transform: translateY(-50px);
+    transform: translateY(50px);
   }
   100% {
     transform: translateY(0px);
@@ -50,9 +53,9 @@ body {
 .scroll-down-button {
   left: 0;
   right: 0;
+  bottom: 30%;
   margin-left: auto;
   margin-right: auto;
-  bottom: 10%;
   position: absolute;
   color: AliceBlue;
   font-size: 4rem;

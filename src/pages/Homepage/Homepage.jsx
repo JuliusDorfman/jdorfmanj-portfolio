@@ -22,19 +22,21 @@ export default class Homepage extends Component {
     return (
       <div>
 
-        <Header />
+        <div style={{ height: 80 + "vh" }}>
 
-        <div className="container">
+          <Header />
 
-          <div className="landing-intro">
-            <h1>Julius G. Dorfman</h1>
-            <p className="work-intro">
-              Of the mind that in simplicity is beauty.
-              <br />
-              But complexity is fun.<i className="fas fa-grin-wink"></i>
-            </p>
+          <div className="container">
+
+            <div className="landing-intro">
+              <h1>Julius G. Dorfman</h1>
+              <p className="work-intro">
+              Simplicity is Beauty<i className="far fa-smile-wink work-intro-flavor"></i>
+              </p>
+            </div>
+              <span onClick={this.click.bind(this)}><i className="far fa-arrow-alt-circle-down scroll-down-button"></i></span>
           </div>
-          <span onClick={this.click.bind(this)}><i className="far fa-arrow-alt-circle-down scroll-down-button"></i></span>
+
         </div>
 
         <div className="content">
