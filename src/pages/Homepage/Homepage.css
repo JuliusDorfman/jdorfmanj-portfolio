@@ -60,8 +60,6 @@ body {
   cursor: pointer;
 }
 
-
-
 /* Portfolio */
 
 .landing-intro {
@@ -114,7 +112,8 @@ body {
   margin: 0;
   text-align: center;
 }
-.project-center{
+
+.project-center {
   margin: auto;
 }
 
@@ -153,20 +152,32 @@ body {
 }
 
 #proj-2 {
-  background: palegreen;
+  /* background-image: url('/assets/images/dotted-lines-bg.png'); */
+  background-size: 10%;
 }
 
-#proj-3 {
-  background: paleturquoise;
+#proj-2 .project-overlay {
+  background: rgba(35, 167, 127, 0.397);
 }
 
-#proj-4 {
-  background: palevioletred;
+#proj-2 a {
+  color: #333;
+}
+
+#proj-2 .project-center {
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 10%;
+  color: #333;
 }
 
 #proj-3 {
   overflow: hidden;
   background: url('/assets/images/red-bg-light.jpg');
+}
+
+#proj-4 {
+  background: palevioletred;
 }
 
 /* Custom Animation */
@@ -209,8 +220,7 @@ body {
   transform: rotate(25deg);
   overflow: hidden;
   animation: fallingCrystals 7s infinite linear;
-} 
-
+}
 
 @keyframes fallingCrystals {
   0% {
@@ -219,6 +229,4 @@ body {
   100% {
     top: 1000px;
   }
-} 
-
-
+}
