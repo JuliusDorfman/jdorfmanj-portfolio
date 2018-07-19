@@ -38,9 +38,8 @@ export default class About extends Component {
               <div className="about-me-content-column">
                 <h3>KNOWLEDGE</h3>
                 <ul>
-                  <li>
+                  <li className="about-me-list-item">
                     <p>HTML5</p>
-                    <span />
                   </li>
                   <li>
                     <p>CSS3</p>
@@ -105,7 +104,7 @@ export default class About extends Component {
           </div>
         </div>
         <Footer />
-      </div>
+      </div >
     )
   }
 }
