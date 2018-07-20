@@ -149,20 +149,20 @@ body {
 /* Projects */
 
 /* Project One */
-
+/* 
 #proj-1 {
   background: url('/assets/images/transparent_squiggle.png');
   background-position-y: -200px;
-}
+} */
 
 #proj-1 .project-overlay {
   background: rgba(255, 255, 160, 0.9);
 }
 
-#proj-2 {
+/* #proj-2 {
   background-image: url('/assets/images/diag-lines-bg.png');
   background-size: 10%;
-}
+} */
 
 #proj-2 .project-overlay {
   background: rgba(35, 167, 127, 0.397);
