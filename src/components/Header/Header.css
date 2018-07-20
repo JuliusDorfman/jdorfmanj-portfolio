@@ -4,6 +4,51 @@ header {
   padding: 100px 0 140px 0;
 }
 
+/* Expand Bars */
+
+.header-contact {
+  float: left;
+}
+
+.header-icon {
+  display: block;
+  float: left;
+  margin: 15px auto;
+  font-size: 37px;
+  color: gray;
+  transition-duration: .5s;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.header-icon:hover {
+  cursor: pointer;
+  transform: rotate(270deg);
+}
+
+.header-mylinks {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  list-style: none;
+}
+
+.header-mylinks li {
+  float: left;
+  margin: auto 20px auto auto;
+  font-size: 25px;
+  line-height: 2.75;
+}
+
+.header-mylinks i {
+  color: white;
+  transition: .5s;
+}
+
+.header-mylinks li:first-child{
+  margin-left: 40px;  
+}
+
 /* Navbar */
 
 .nav-menu {
@@ -30,5 +75,8 @@ header {
   .nav-menu * {
     font-size: 17px;
      margin: 0 0 0 10px;
+  }
+  .header-icon {
+    font-size: 20px;
   }
 }

@@ -13,7 +13,7 @@ export default class Homepage extends Component {
 
   click(e) {
     window.scroll({
-      top: 650,
+      top: 700,
       behavior: 'smooth'
     })
   }
