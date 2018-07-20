@@ -22,7 +22,7 @@ export default class Homepage extends Component {
     return (
       <div>
 
-        <div style={{ height: 80 + "vh" }}>
+        <div style={{ height: 95 + "vh" }}>
 
           <Header />
 
