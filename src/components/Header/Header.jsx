@@ -4,17 +4,27 @@ import './Header.css';
 export default class Header extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+      showLinks: false
+    }
     this.handleHover = this.handleHover.bind(this)
   }
 
   handleHover(e) {
     let el = document.getElementsByClassName('header-mylinks')[0].childNodes;
-
+    if (!this.state.showLinks) {
     for (let i = 0; i < el.length; i++) {
       let element = el[i].childNodes[0].childNodes[0]
       element.style.color = "gray";
+      this.setState({showLinks: true})
     }
+  } else { 
+    for (let i = 0; i < el.length; i++) {
+      let element = el[i].childNodes[0].childNodes[0]
+      element.style.color = "white";
+      this.setState({showLinks: false})
+    }
+  }
   }
 
   render() {
@@ -22,9 +32,7 @@ export default class Header extends Component {
       <header>
         <div className="container">
           <div className="header-contact">
-            <div className="header-icon-wrapper" onMouseOver={this.handleHover}>
-              <i className="header-icon far fa-square"></i>
-            </div>
+              <i className="header-icon far fa-square"  onMouseOver={this.handleHover}></i>
             <ul className="header-mylinks">
               <li>
                 <a
@@ -59,7 +67,6 @@ export default class Header extends Component {
               </li>
             </ul>
           </div>
-          <nav>
             <ul className="nav-menu">
               <li>
                 <a href="/">Work</a>
@@ -67,8 +74,10 @@ export default class Header extends Component {
               <li>
                 <a href="../About">About</a>
               </li>
+              <li>
+                <a href="../Contact">Contact</a>
+              </li>
             </ul>
-          </nav>
         </div>
       </header>
     )

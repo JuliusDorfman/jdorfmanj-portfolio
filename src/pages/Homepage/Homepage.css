@@ -31,9 +31,6 @@ body {
   margin: 0 0 0 10px; 
 }
 
-/* Scroll Down Element */
-
-
 /* Scroll Down Button */
 
 @keyframes downbounce {
@@ -57,6 +54,7 @@ body {
   bottom: 30%;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
   position: absolute;
   color: AliceBlue;
   font-size: 4rem;
@@ -119,6 +117,7 @@ body {
 
 .project-center {
   margin: auto;
+  text-align: center;
 }
 
 .page-detail {
@@ -149,21 +148,10 @@ body {
 
 /* Projects */
 
-/* Project One */
-/* 
-#proj-1 {
-  background: url('/assets/images/transparent_squiggle.png');
-  background-position-y: -200px;
-} */
 
 #proj-1 .project-overlay {
   background: rgba(255, 255, 160, 0.9);
 }
-
-/* #proj-2 {
-  background-image: url('/assets/images/diag-lines-bg.png');
-  background-size: 10%;
-} */
 
 #proj-2 .project-overlay {
   background: rgba(35, 167, 127, 0.397);

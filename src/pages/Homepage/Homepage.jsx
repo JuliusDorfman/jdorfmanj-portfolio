@@ -39,6 +39,8 @@ export default class Homepage extends Component {
 
         </div>
 
+{/* Utilize Flex Box to create fully responsive project cards.  */}
+
         <div className="content">
 
           <div className="portfolio">

@@ -4,14 +4,13 @@ header {
   padding: 100px 0 140px 0;
 }
 
-/* Expand Bars */
+/* Icon and Personal Links */
 
 .header-contact {
   float: left;
 }
 
 .header-icon {
-  display: block;
   float: left;
   margin: 15px auto;
   font-size: 37px;
@@ -27,56 +26,51 @@ header {
 }
 
 .header-mylinks {
-  margin: 0;
-  padding: 0;
-  width: 200px;
+  display: inline-block;
+  text-align: left;
+  padding: 2px 0 0 0;
   list-style: none;
 }
 
-.header-mylinks li {
-  float: left;
-  margin: auto 20px auto auto;
-  font-size: 25px;
-  line-height: 2.75;
-}
-
 .header-mylinks i {
-  color: white;
-  transition: .5s;
+  transition: 1s;
 }
 
-.header-mylinks li:first-child{
-  margin-left: 40px;  
+.header-mylinks>li {
+  display: inline-block;
+  font-size: 23px;
+  margin: 2px 20px 0 0;
+}
+
+.header-mylinks>li:first-child {
+  margin-left: 30px;
+}
+
+.header-mylinks>li>a {
+  transition-duration: 1.5s;
+  color: white;
 }
 
 /* Navbar */
 
 .nav-menu {
-  display: block;
-  float: right;
+  text-align: right;
+  list-style: none;
 }
 
-.nav-menu li {
-  float: left;
+.nav-menu > li {
+  display: inline-block;
+  margin: 20px 20px 0 20px;
   font-size: 23px;
 }
 
-.nav-menu * {
-  margin: 0 0 0 20px;
+.nav-menu > li > a {
   text-decoration: none;
-  list-style: none;
   color: gray;
 }
 
 @media (max-width: 750px) {
-  .nav-menu {
-    padding: 0;
-  }
-  .nav-menu * {
+  .nav-menu > li {
     font-size: 17px;
-     margin: 0 0 0 10px;
-  }
-  .header-icon {
-    font-size: 20px;
   }
 }

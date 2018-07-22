@@ -10,33 +10,24 @@ export default class Contact extends Component {
         <Header />
 
         <div className="container">
-
-          <div className="landing-intro">
-            <h1>Julius G. Dorfman</h1>
-            <p className="work-intro">
-              Simplicity is Beauty<i className="far fa-smile-wink work-intro-flavor"></i>
-            </p>
+          <div className="contact-intro">
+            <h1>Get in Touch!</h1>
           </div>
         </div>
-        <div className="container">
-          <form>
-            <div>
-              <span>
-                <input type="text" name="name" placeholder=""/>
-              </span>
-            </div>
-            <div>
-              <span>
-                <input type="text" name="email"/>
-              </span>
-            </div>
-            <div>
-              <span>
-                <input type="text" name="message"/>
-              </span>
-            </div>
 
-          </form>
+        <div className="container">
+          <div className="contact-wrapper">
+            <form className="contact-form" method="GET" name="contact-me">
+              <div className="contact-info">
+                <input id="contact-full-name" type="text" name="full-name" placeholder="&nbsp;&nbsp;&nbsp;Full Name" />
+                <input id="contact-email" type="text" name="email" placeholder="&nbsp;&nbsp;&nbsp;Email" />
+              </div>
+              <div className="contact-message-wrapper">
+                <textarea id="contact-message" type="text" name="message" placeholder="&nbsp;&nbsp;&nbsp;Message" ></textarea>
+              </div>
+              <input type="submit" value="Send" id="send-btn" />
+            </form>
+          </div>
         </div>
       </div>
     )

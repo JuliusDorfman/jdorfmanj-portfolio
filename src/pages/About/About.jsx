@@ -29,8 +29,8 @@ export default class About extends Component {
             </div>
           </div>
 
-          <div className="container about-me-container">
-            <img className="about-me-profile" src="/assets/images/AboutMe-Profile.jpg" alt="about-me-profile" />
+          <div className="about-me-profile-container">
+              <img className="about-me-profile" src="/assets/images/AboutMe-Profile.jpg" alt="about-me-profile" />
           </div>
 
           <div className="container">

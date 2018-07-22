@@ -8,12 +8,15 @@
 }
 
 .about-me {
-  color: gray;
+  text-align: center;
   margin-bottom: 50px;
+  color: gray;
 }
 
-.about-me-container {
+.about-me-profile-container {
   margin-bottom: 100px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .about-me-profile {
@@ -23,6 +26,7 @@
 .about-me-content {
   display: flex;
   justify-content: space-around;
+  text-align: center;
   color: #333;
 }
 
