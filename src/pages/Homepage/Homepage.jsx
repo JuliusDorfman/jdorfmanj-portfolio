@@ -31,124 +31,95 @@ export default class Homepage extends Component {
             <div className="landing-intro">
               <h1>Julius G. Dorfman</h1>
               <p className="work-intro">
-              Simplicity is Beauty<i className="far fa-smile-wink work-intro-flavor"></i>
+                Simplicity is Beauty<i className="far fa-smile-wink work-intro-flavor"></i>
               </p>
             </div>
-              <span onClick={this.click.bind(this)}><i className="far fa-arrow-alt-circle-down scroll-down-button"></i></span>
           </div>
 
         </div>
 
-{/* Utilize Flex Box to create fully responsive project cards.  */}
+        {/* Utilize Flex Box to create fully responsive project cards.  */}
+        <div className="container">
 
-        <div className="content">
 
-          <div className="portfolio">
-            <div className="project-row">
 
-              <div className="project-container">
-                <div className="project" id="proj-1">
-                  <div className="project-overlay">
-                    <div className="project-center">
-                      <a
-                        href="https://news-from.herokuapp.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h3>News-From</h3>
-                        <i className="fas fa-link"></i>
-                      </a>
-                      <p>
-                        Search the headlines
+
+          <div className="content-grid">
+
+            <div className="project" id="proj-1">
+              <div className="project-overlay">
+                <div className="project-center">
+                  <a
+                    href="https://news-from.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>News-From</h3>
+                    <i className="fas fa-link"></i>
+                  </a>
+                  <p>
+                    Search the headlines
                       </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="project-container">
-                <div className="project" id="proj-3">
-                  <div className="project-overlay">
-                    <div className="project-center">
-                      <a
-                        href="https://crystal-numbers.herokuapp.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h3>Crystal Game</h3>
-                        <i className="fas fa-link"></i>
-                      </a>
-                      <p>A "Fun" numbers game</p>
-
-                      <img
-                        src="/assets/images/crystal_ruby.png"
-                        className="crystal-ruby"
-                        alt="ruby"
-                      />
-                      <img
-                        src="/assets/images/crystal_diamond.png"
-                        className="crystal-diamond"
-                        alt="diamond"
-                      />
-                      <img
-                        src="/assets/images/crystal_sapphire.png"
-                        className="crystal-sapphire"
-                        alt="sapphire"
-                      />
-                      <img
-                        src="/assets/images/crystal_emerald.png"
-                        className="crystal-emerald"
-                        alt="emerald"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
 
-            <div className="project-row">
 
-              <div className="project-container">
-                <div className="project" id="proj-2">
-                  <div className="project-overlay">
-                    <div className="project-center">
-                      <a
-                        href="https://juliusdorfman.github.io/imagEdits/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h3>imagEdits</h3>
-                        <i className="fas fa-link"></i>
-                      </a>
-                      <p>Online Image Editor</p>
-                    </div>
-                  </div>
+
+            <div className="project" id="proj-2">
+              <div className="project-overlay">
+                <div className="project-center">
+                  <a
+                    href="https://juliusdorfman.github.io/imagEdits/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>imagEdits</h3>
+                    <i className="fas fa-link"></i>
+                  </a>
+                  <p>Online Image Editor</p>
                 </div>
               </div>
-              <div className="project-container">
-                <div className="project" id="proj-4">
-                  <div className="project-overlay">
-                    <div className="project-center">
-                      <a
-                        href="https://github.com/JuliusDorfman/liri-node-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <h3>Liri-Bot</h3>
-                        <i className="fas fa-link"></i>
-                      </a>
-                      <p>Twitter, Spotify, OMDB bot</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
             </div>
+
+
+            <div className="project" id="proj-3">
+              <div className="project-overlay">
+                <div className="project-center">
+                  <a
+                    href="https://crystal-numbers.herokuapp.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>Crystal Game</h3>
+                    <i className="fas fa-link"></i>
+                  </a>
+                  <p>A "Fun" numbers game</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="project" id="proj-4">
+              <div className="project-overlay">
+                <div className="project-center">
+                  <a
+                    href="https://github.com/JuliusDorfman/liri-node-app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <h3>Liri-Bot</h3>
+                    <i className="fas fa-link"></i>
+                  </a>
+                  <p>Twitter, Spotify, OMDB bot</p>
+                </div>
+              </div>
+            </div>
+
           </div>
-          <div className="container">
             <div className="page-detail">
-              <p>Enjoy This Beautiful Use of Whitespace</p>
+              <p>Have a project? I can help!</p>
+              <p>Contact<a href="../Contact"><i class="contact-arrow far fa-arrow-alt-circle-right"></i></a></p>
             </div>
-          </div>
         </div>
         <Footer />
       </div >

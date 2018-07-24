@@ -4,12 +4,10 @@ import './Footer.css';
 export default class Footer extends Component {
   render() {
     return (
-      <div className="footer-wrapper">
-        <footer>
-          <div className="container">
-
+      <footer>
+        <div className="container">
+          <div className="footer-content">
             <p className="footer-copywrite">&copy; <time>2018</time> Julius G. Dorfman</p>
-
             <ul className="ul-social">
               <li className="li-social-links">
                 <a
@@ -43,10 +41,9 @@ export default class Footer extends Component {
                 </a>
               </li>
             </ul>
-
           </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     )
   }
 }

@@ -6,13 +6,12 @@ header {
 
 /* Icon and Personal Links */
 
-.header-contact {
+
+.float-left {
   float: left;
 }
 
 .header-icon {
-  float: left;
-  margin: 15px auto;
   font-size: 37px;
   color: gray;
   transition-duration: .5s;
@@ -27,8 +26,9 @@ header {
 
 .header-mylinks {
   display: inline-block;
+  margin: 10px auto;
   text-align: left;
-  padding: 2px 0 0 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -38,17 +38,13 @@ header {
 
 .header-mylinks>li {
   display: inline-block;
+  vertical-align: middle;
   font-size: 23px;
-  margin: 2px 20px 0 0;
-}
-
-.header-mylinks>li:first-child {
-  margin-left: 30px;
+  margin: 0 20px 0 0;
 }
 
 .header-mylinks>li>a {
-  transition-duration: 1.5s;
-  color: white;
+  color: gray;
 }
 
 /* Navbar */
@@ -60,7 +56,7 @@ header {
 
 .nav-menu > li {
   display: inline-block;
-  margin: 20px 20px 0 20px;
+  margin: 7px 20px 0 20px;
   font-size: 23px;
 }
 
@@ -69,8 +65,12 @@ header {
   color: gray;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 775px) {
+  .nav-menu {
+    padding-top: 1px;
+  }
   .nav-menu > li {
     font-size: 17px;
+    display: block;
   }
 }

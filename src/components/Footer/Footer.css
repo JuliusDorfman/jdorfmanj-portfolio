@@ -1,31 +1,49 @@
-.footer-wrapper {
-  padding: 75px 0 200px 0;
+footer {
+  display: block;
   background: gainsboro;
 }
 
-.footer-wrapper * {
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
   color: gray;
 }
 
 .footer-copywrite {
-  float: left;
+  flex: auto;
   font-size: 24px;
 }
 
 .ul-social {
-  float: right;
   list-style: none;
   padding: 0;
 }
 
-.ul-social * {
-  font-size: 37px;
-  margin-left: 30px;
-  float: left;
+.ul-social>li {
+  display: inline-block;
+  margin-left: 40px;
 }
 
-@media (max-width: 1000px) {
-  .ul-social * {
-    margin-left: 20px;
+.ul-social>li>a {
+  font-size: 37px;
+  color: gray;
+}
+
+@media (max-width: 775px) {
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+  .footer-copywrite {
+    font-size: 15px;
+    flex: initial;
+  }
+  .ul-social>li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  .ul-social>li>a {
+    font-size: 20px;
   }
 }

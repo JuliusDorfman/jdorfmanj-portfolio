@@ -14,6 +14,11 @@ body {
   margin: 0;
 }
 
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .page-detail {
   height: 200px;
 }
@@ -28,7 +33,7 @@ body {
 }
 
 .work-intro-flavor {
-  margin: 0 0 0 10px; 
+  margin: 0 0 0 10px;
 }
 
 /* Scroll Down Button */
@@ -121,21 +126,23 @@ body {
 }
 
 .page-detail {
-  display: flex;
-  color: #f0f0f0;
-  font-size: 37px;
+  color: gray;
+  padding-top: 112px;
+  padding-left: 50px;
+  font-size: 24px;
 }
 
 .page-detail p {
   margin: auto;
 }
 
-@media (max-width: 750px) {
+.page-detail>p>a {
+  color: gray;
+}
+
+@media (max-width: 775px) {
   .container {
     margin: auto 40px;
-  }
-  .portfolio {
-    flex-direction: column;
   }
   .landing-intro h1 {
     font-size: 27px;
@@ -144,10 +151,19 @@ body {
     font-size: 17px;
     line-height: 200%;
   }
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-detail {
+    font-size: 20px;
+  }
+}
+
+.contact-arrow {
+  padding-left: 10px;
 }
 
 /* Projects */
-
 
 #proj-1 .project-overlay {
   background: rgba(255, 255, 160, 0.9);
@@ -174,7 +190,7 @@ body {
 }
 
 #proj-4 {
-  background: palevioletred;
+  background: lightslategray;
 }
 
 #proj-4 .project-center {
@@ -182,55 +198,4 @@ body {
   background: rgba(255, 255, 255, .7);
   border-radius: 10%;
   color: #333;
-}
-
-/* Custom Animation */
-
-.crystal-ruby {
-  position: absolute;
-  height: 10%;
-  left: 10%;
-  opacity: .3;
-  transform: rotate(-30deg);
-  overflow: hidden;
-  animation: fallingCrystals 12s infinite linear;
-}
-
-.crystal-diamond {
-  position: absolute;
-  height: 20%;
-  left: 20%;
-  opacity: .6;
-  transform: rotate(45deg);
-  overflow: hidden;
-  animation: fallingCrystals 6s infinite linear;
-}
-
-.crystal-sapphire {
-  position: absolute;
-  height: 20%;
-  left: 50%;
-  opacity: .5;
-  transform: rotate(-20deg);
-  overflow: hidden;
-  animation: fallingCrystals 5s infinite linear;
-}
-
-.crystal-emerald {
-  position: absolute;
-  height: 10%;
-  left: 75%;
-  opacity: .4;
-  transform: rotate(25deg);
-  overflow: hidden;
-  animation: fallingCrystals 7s infinite linear;
-}
-
-@keyframes fallingCrystals {
-  0% {
-    top: -160px;
-  }
-  100% {
-    top: 1000px;
-  }
 }

@@ -9,25 +9,21 @@
   color: #333;
 }
 
-.contacter-info {
-  display: inline-block;
-}
-
 /* Form Styles */
 
-.contact-wrapper {
+.contact-form-wrapper {
   display: flex;
   height: 700px;
   width: 700px;
-  margin: auto;
-  background: ghostwhite;
+  margin: 0 auto 200px auto;
   border-radius: 50%;
+  border: 1px solid palegoldenrod;
 }
 
 .contact-form {
   width: 500px;
   margin: auto;
-  padding: 2rem;
+  padding: 5rem;
   text-align: center;
 }
 
@@ -42,14 +38,13 @@
 
 .contact-info input,
 textarea, #send-btn {
-  background: aliceblue;
-  border: 1px solid paleturquoise;
+  background: transparent;
+  border: 1px solid palegoldenrod;
   border-radius: 12px;
 }
 
 .contact-message-wrapper {
   margin: 20px;
-  text-align: center;
 }
 
 #contact-message {
@@ -68,7 +63,7 @@ textarea:focus {
 } 
 
 @media (max-width: 750px) {
-  .contact-wrapper {
+  .contact-form-wrapper {
     height: initial;
     width: initial;
   }
