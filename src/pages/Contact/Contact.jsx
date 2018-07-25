@@ -18,13 +18,13 @@ export default class Contact extends Component {
 
         <div className="container">
           <div className="contact-form-wrapper">
-            <form className="contact-form" method="POST" action="../../components/Email/email.php">
+            <form className="contact-form" method="POST" action="email.php">
               <div className="contact-info">
-                <input id="contact-full-name" type="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;Full Name" required />
-                <input id="contact-email" type="email" name="email" placeholder="&nbsp;&nbsp;&nbsp;Email" required />
+                <input id="name" type="text" name="name" placeholder="&nbsp;&nbsp;&nbsp;Full Name" required />
+                <input id="email" type="email" name="email" placeholder="&nbsp;&nbsp;&nbsp;Email" required />
               </div>
               <div className="contact-message-wrapper">
-                <textarea id="contact-message" type="text" name="message" placeholder="&nbsp;&nbsp;&nbsp;Message" required></textarea>
+                <textarea id="message" type="text" name="message" placeholder="&nbsp;&nbsp;&nbsp;Message" required></textarea>
               </div>
               <input type="submit" name="submit" value="Send" id="send-btn" />
             </form>
