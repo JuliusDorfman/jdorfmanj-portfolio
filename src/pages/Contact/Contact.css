@@ -41,6 +41,7 @@ textarea, #send-btn {
   background: transparent;
   border: 1px solid palegoldenrod;
   border-radius: 12px;
+  font-family: initial;
 }
 
 .contact-message-wrapper {

@@ -41,9 +41,9 @@ export default class Header extends Component {
             <li>
               <a href="../About">About</a>
             </li>
-            <li>
+            {/* <li>
               <a href="../Contact">Contact</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </header>

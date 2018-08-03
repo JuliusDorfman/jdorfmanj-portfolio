@@ -140,6 +140,24 @@ body {
   color: gray;
 }
 
+
+
+.contact-arrow {
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 7px;
+}
+
+.contact-info p {
+  margin: initial;
+}
+
 @media (max-width: 775px) {
   .container {
     margin: auto 40px;
@@ -157,10 +175,12 @@ body {
   .page-detail {
     font-size: 20px;
   }
-}
-
-.contact-arrow {
-  padding-left: 10px;
+  .contact-info {
+    margin-top: 20px;
+  }
+  .contact-info p {
+    font-size: 15px;
+  }
 }
 
 /* Projects */

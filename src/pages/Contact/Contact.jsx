@@ -3,7 +3,11 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import './Contact.css';
 
+
+
 export default class Contact extends Component {
+
+
   render() {
     return (
       <div>
@@ -28,6 +32,7 @@ export default class Contact extends Component {
               </div>
               <input type="submit" name="submit" value="Send" id="send-btn" />
             </form>
+            <h3>{}</h3>
           </div>
         </div>
         <Footer />
