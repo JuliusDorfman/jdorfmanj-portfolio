@@ -67,12 +67,19 @@ export default class About extends Component {
                     <span />
                   </li>
                   <li>
-                    <p>WEB DESIGN</p>
+                    <p>RESPONSIVE DESIGN</p>
                     <span />
                   </li>
                   <li>
                     <p>PHOTOSHOP</p>
                     <span />
+                  </li>
+                  <li>
+                    <p>API DEVELOPMENT</p>
+                  </li>
+                  <span />
+                  <li>
+                    <p></p>
                   </li>
                 </ul>
               </div>
