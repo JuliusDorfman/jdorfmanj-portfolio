@@ -1,7 +1,9 @@
-/* .App {
-  text-align: center;
-}
+ .App {
+   margin: 0;
+   background: rgb(240, 240, 240)
+ }
 
+ /*
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

@@ -51,8 +51,6 @@ export default class Header extends Component {
   }
 }
 
-
-
 // <div className="header-contact">
 // <i className="header-icon far fa-square" onMouseOver={this.handleHover}></i>
 // </div>

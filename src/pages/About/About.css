@@ -27,7 +27,7 @@
   display: flex;
   justify-content: space-around;
   text-align: center;
-  color: #333;
+  color: rgb(55, 55, 55);
 }
 
 .about-me-content-column h3 {
@@ -37,7 +37,7 @@
 .about-me-content-column ul {
   padding: 0;
   list-style: none;
-  color: gray;
+  color: rgb(55, 55, 55);
 }
 
 @media (max-width: 750px) {

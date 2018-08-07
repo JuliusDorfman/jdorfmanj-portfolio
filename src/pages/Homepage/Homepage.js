@@ -31,12 +31,33 @@ export default class Homepage extends Component {
 
           <Header />
 
-          <div className="container">
+          <div className="container homepage-landing">
             <div className="landing-intro">
               <h1>Julius G. Dorfman</h1>
-              <p className="work-intro">
-                Simplicity is Beauty<i className="far fa-smile-wink work-intro-flavor"></i>
-              </p>
+              <ul className="work-intro-flavor">
+                <li>
+                  Design,
+                </li>
+                <li>
+                  Development,
+                </li>
+                <li>
+                  Passion, Creativity.
+                </li>
+              </ul>
+            </div>
+            <div className="work-intro-details-wrapper">
+              <ul className="work-intro-details">
+                <li>
+                  <p>I create <span className="orange-highlight">quality</span> Websites and Applications with care and the utmost attention.</p>
+                </li>
+                <li>
+                  <p>Each product built using the most <span className="orange-highlight">up-to-date</span> full-stack technologies.</p>
+                </li>
+                <li>
+                <p>Let's create some <span className="orange-highlight">engaging</span> content.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

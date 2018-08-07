@@ -1,7 +1,7 @@
 /* Header */
 
 header {
-  padding: 100px 0 140px 0;
+  padding: 100px 0;
 }
 
 /* Icon and Personal Links */
@@ -13,7 +13,7 @@ header {
 
 .header-icon {
   font-size: 37px;
-  color: gray;
+  color: rgb(55, 55, 55);
   transition-duration: .5s;
   transition-property: transform;
   transition-timing-function: ease-in-out;
@@ -44,7 +44,7 @@ header {
 }
 
 .header-mylinks>li>a {
-  color: gray;
+  color: rgb(55, 55, 55);
 }
 
 /* Navbar */
@@ -62,7 +62,7 @@ header {
 
 .nav-menu > li > a {
   text-decoration: none;
-  color: gray;
+  color: rgb(55, 55, 55);
 }
 
 @media (max-width: 775px) {
