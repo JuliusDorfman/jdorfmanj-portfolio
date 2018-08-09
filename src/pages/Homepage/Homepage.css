@@ -4,27 +4,59 @@
   font-family: 'Expletus Sans', cursive;
 }
 
+/* Navbar*/
+
+.content-navbar {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  border-bottom: 2px solid;
+}
+
+.content-navbar>li {
+  display: inline-block;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 23px;
+  color: rgba(50, 50, 50, .3);
+  transition: .5;
+}
+
+.content-navbar>li:hover {
+  color: rgba(50, 50, 50, .7);
+}
+
 .homepage-component {
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 100vh;
   overflow: hidden;
+  color: rgba(50, 50, 50, 1);
 }
 
 .bio-bar-wrapper {
-  background: rgba(200, 200, 200, 1)
+  background: rgba(220, 220, 220, 1)
 }
 
 .bio-bar {
   margin: 20px 0 20px 20px;
   padding: 20px;
+  height: 90vh;
   background: rgba(50, 50, 50, 1);
-  color: rgba(200, 200, 200, 1);
+  color: rgba(220, 220, 220, 1);
+  box-shadow: 0 0 15px 10px grey;
 }
 
 .bio-bar-content>h1,
+h2,
 h3 {
   text-align: center;
+}
+
+.bio-bar-content>h2 {
+  padding-bottom: 20px;
+  margin-top: 0;
+  border-bottom: 2px solid;
 }
 
 .homepage-content-wrapper {
@@ -34,8 +66,16 @@ h3 {
 .homepage-content {
   margin: 20px 20px 20px 0;
   padding: 20px;
-  background: rgba(200, 200, 200, 1);
+  background: rgba(220, 220, 220, 1);
   text-align: center;
+  height: 90vh;
+  box-shadow: 0 0 30px 1px inset;
+}
+
+.homepage-content h2 {
+  display: inline-block;
+  text-align: left;
+  border-bottom: 2px solid black;
 }
 
 .homepage-content>p {
@@ -45,15 +85,69 @@ h3 {
 .portfolio-container {
   display: flex;
   flex-direction: column;
+  height: 90%;
 }
 
 .projects-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto 120px;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  width: 18rem;
+  border: 1px solid black;
+  border-radius: 12px;
 }
 
 .project-wrapper a {
   color: rgba(50, 50, 50, 1)
+}
+
+.project-overlay {
+  height: 100%;
+}
+
+.project-center {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-center>h3 {
+  flex: 1 1;
+  padding: 1rem;
+  margin: 0;
+}
+
+.project-center>p {
+  margin: 0;
+  padding: 1rem 1.5rem;
+}
+
+.project-technology-icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  padding: 0 30px 10px 30px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.project-links>a {
+  text-decoration: none;
+  transition: .5s;
+}
+
+.project-links>a:hover {
+  color: orangered;
 }
 
 .container {
@@ -88,7 +182,7 @@ h3 {
   display: block;
   text-align: left;
   margin: 0;
-  font-size: 23px;
+  font-size: 18px;
   color: rgb(200, 200, 200);
   line-height: 150%;
   padding: 0 0 50px 0;
