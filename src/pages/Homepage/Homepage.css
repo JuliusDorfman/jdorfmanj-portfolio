@@ -24,6 +24,7 @@
 
 .content-navbar>li:hover {
   color: rgba(50, 50, 50, .7);
+  cursor: pointer;
 }
 
 .homepage-component {
@@ -242,6 +243,8 @@ h3 {
   color: rgb(70, 120, 160);
 }
 
+
+
 @media (max-width: 1100px) {
   .homepage-landing {
     flex-direction: column;
@@ -251,164 +254,6 @@ h3 {
   }
 }
 
-/* Portfolio */
-
-/* 
-.landing-intro {
-  text-align: left;
-  color: rgb(55, 55, 55);
-  flex: 1.5 1;
-}
-
-.landing-intro h1 {
-  font-size: 52px;
-  line-height: 70px;
-  margin: 0 0 35px 0;
-} 
-
-.portfolio {
-  display: flex;
-}
-
-.project {
-  height: 50vh;
-  overflow: hidden;
-}
-
-.project-row {
-  flex-direction: row;
-}
-
-.project-overlay {
-  display: flex;
-  position: relative;
-  top: 0;
-  height: 100%;
-  background: rgba(255, 255, 255, .6);
-  color: #333;
-}
-
-.project-overlay h3 {
-  display: inline-block;
-  margin: 0;
-  padding: 0 2% 10% 0;
-  text-align: center;
-}
-
-.project-overlay a {
-  text-decoration: none;
-  color: #333;
-}
-
-.project-overlay p {
-  margin: 0;
-  text-align: center;
-}
-
-.project-center {
-  margin: auto;
-  text-align: center;
-}
-
-.page-detail {
-  color: gray;
-  padding-top: 112px;
-  padding-left: 50px;
-  font-size: 24px;
-}
-
-.page-detail p {
-  margin: auto;
-}
-
-.page-detail>p>a {
-  color: gray;
-}
-
-.contact-arrow {
-  padding-left: 10px;
-  cursor: pointer;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 7px;
-}
-
-.contact-info p {
-  margin: initial;
-}
-
-@media (max-width: 775px) {
-  .container {
-    margin: auto 40px;
-  }
-  .landing-intro h1 {
-    font-size: 27px;
-  }
-  .work-intro-flavor {
-    font-size: 17px;
-    line-height: 200%;
-  }
-  .content-grid {
-    grid-template-columns: 1fr;
-  }
-  .page-detail {
-    font-size: 20px;
-  }
-  .contact-info {
-    margin-top: 20px;
-  }
-  .contact-info p {
-    font-size: 15px;
-  }
-  .work-intro-details>li {
-    font-size: 10px;
-  }
-  .work-intro-details>li>p {
-    font-size: 13px;
-  }
-}
-*/
-
-/* Projects */
-
-#proj-1 .project-overlay {
-  background: rgba(255, 255, 160, 0.9);
-}
-
-#proj-2 .project-overlay {
-  background: rgba(35, 167, 127, 0.397);
-}
-
-#proj-2 a {
-  color: #333;
-}
-
-#proj-2 .project-center {
-  padding: 20px 30px;
-  background: rgba(255, 255, 255, .7);
-  border-radius: 10%;
-  color: #333;
-}
-
-#proj-3 {
-  overflow: hidden;
-  background: url('/assets/images/red-bg-light.jpg');
-}
-
-#proj-4 {
-  background: rgb(118, 150, 219);
-}
-
-#proj-4 .project-center {
-  padding: 20px 30px;
-  background: rgba(255, 255, 255, .7);
-  border-radius: 10%;
-  color: #333;
-}
 
 @media (max-width: 1000px) {
   .homepage-component {

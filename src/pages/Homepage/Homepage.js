@@ -1,28 +1,20 @@
 import React, { Component } from 'react';
 import Experience from '../../components/Experience';
 import Portfolio from '../../components/Portfolio';
+import Aboutme from '../../components/Aboutme';
 import './Homepage.css';
-// import Contact from '../Contact/Contact';
-
 
 export default class Homepage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       showPortfolio: false,
-      showExperience: false
+      showExperience: false,
+      showAboutme: true
     }
-    this.handleClick = this.handleClick.bind(this);
     this.handleRender = this.handleRender.bind(this);
   }
 
-  handleClick(e) {
-    if (this.state.showContact) {
-      this.setState({ showContact: false })
-    } else {
-      this.setState({ showContact: true })
-    }
-  }
 
   handleRender(e) {
     let element = document.getElementsByClassName("content-navbar")[0].childNodes;
@@ -35,6 +27,7 @@ export default class Homepage extends Component {
       if (this.state.showPortfolio === false) {
         this.setState({ showPortfolio: true });
         this.setState({ showExperience: false })
+        this.setState({ showAboutme: false })
       } else {
         this.setState({ showPortfolio: false });
       }
@@ -44,11 +37,22 @@ export default class Homepage extends Component {
       if (this.state.showExperience === false) {
         this.setState({ showExperience: true });
         this.setState({ showPortfolio: false })
+        this.setState({ showAboutme: false })
       } else {
         this.setState({ showExperience: false });
       }
     }
-    
+
+    if (e.target.getAttribute("value") === "aboutme") {
+      if (this.state.showAboutme === false) {
+        this.setState({ showAboutme: true })
+        this.setState({ showExperience: false });
+        this.setState({ showPortfolio: false })
+      } else {
+        this.setState({ showExperience: false });
+      }
+    }
+
   }
 
   render() {
@@ -74,7 +78,7 @@ export default class Homepage extends Component {
             </div>
             <div className="bio-bar-portfolio">
               <h3>Portfolio</h3>
-              <p>I am a Full-Stack Developer with a true <span className="orange-highlight">passion</span> for creating. I strive to be an individual who is appreciated for his <span className="orange-highlight">work ethic</span> and <span className="blue-highlight">flexibility</span>.
+              <p>I am a Full-Stack Developer with a true <span className="orange-highlight">passion</span> for creating. I strive to be an individual who is appreciated for his work ethic and <span className="blue-highlight">flexibility</span>.
                 My mark as a developer is <span className="blue-highlight">integrity</span> and <span className="orange-highlight">quality</span>.
               </p>
             </div>
@@ -98,6 +102,7 @@ export default class Homepage extends Component {
               <ul className="content-navbar">
                 <li onClick={this.handleRender} value="portfolio">PORTFOLIO</li>
                 <li onClick={this.handleRender} value="experience">EXPERIENCE</li>
+                <li onClick={this.handleRender} value="aboutme">ABOUT ME</li>
               </ul>
             </div>
 
@@ -112,6 +117,13 @@ export default class Homepage extends Component {
               this.state.showExperience
                 ?
                 <Experience />
+                :
+                <span />
+            }
+            {
+              this.state.showAboutme
+                ?
+                <Aboutme />
                 :
                 <span />
             }
