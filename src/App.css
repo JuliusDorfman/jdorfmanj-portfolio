@@ -1,6 +1,7 @@
 .App {
   background: rgb(240, 240, 250);
   margin: 0;
+  overflow: hidden;
  }
 
  /*

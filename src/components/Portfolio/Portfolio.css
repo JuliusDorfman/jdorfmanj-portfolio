@@ -2,3 +2,9 @@
   height: 90%;
   overflow: auto;
 }
+.project-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}

@@ -14,7 +14,7 @@
 .about-me-content-column>h3 {
   border-bottom: rgba(50, 50, 50, 0.8);
   border-bottom: 1px solid;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .about-me-content-column>ul>li {
@@ -23,10 +23,33 @@
   padding-left: 10px;
   border-left: 1px solid rgba(50, 50, 50, 0.8);
   height: 50px;
-  vertical-align: middle;
   padding-top: 30px;
 }
 
 .about-me-content-column>ul>li>p {
+  display: inline;
   margin: 0;
+}
+
+.no-list-style {
+  list-style: none !important;
+  border-left: none !important;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 750px) {
+  .about-me-content-column>ul>li {
+    list-style-position: inside;
+  }
+  .flex-container {
+    flex-direction: row;
+  }
+  .flex-container>* {
+    flex: auto;
+    margin: auto;
+  }
 }
