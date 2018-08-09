@@ -30,7 +30,6 @@
   display: grid;
   grid-template-columns: 1fr 3fr;
   height: 100vh;
-  overflow: hidden;
   color: rgba(50, 50, 50, 1);
 }
 
@@ -45,6 +44,14 @@
   background: rgba(50, 50, 50, 1);
   color: rgba(220, 220, 220, 1);
   box-shadow: 0 0 15px 10px grey;
+}
+
+.bio-bar-portfolio {
+  padding: 0 0 50px 0;
+}
+
+.bio-bar-portfolio>p {
+  margin: 0;
 }
 
 .bio-bar-content>h1,
@@ -159,6 +166,7 @@ h3 {
 .footer-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
   list-style: none;
   padding: 0;
 }
@@ -180,7 +188,6 @@ h3 {
 
 .work-intro-flavor {
   display: block;
-  text-align: left;
   margin: 0;
   font-size: 18px;
   color: rgb(200, 200, 200);
@@ -191,6 +198,10 @@ h3 {
 
 .work-intro-flavor>li {
   list-style: none;
+}
+
+.work-intro-flavor>li>p {
+  margin: 0;
 }
 
 .work-intro-details-wrapper {
@@ -220,6 +231,10 @@ h3 {
 
 .orange-highlight {
   color: rgb(225, 130, 80);
+}
+
+.blue-highlight {
+  color: rgb(70, 120, 160)
 }
 
 @media (max-width: 1100px) {
@@ -388,4 +403,53 @@ h3 {
   background: rgba(255, 255, 255, .7);
   border-radius: 10%;
   color: #333;
+}
+
+@media (max-width: 1000px) {
+  .homepage-component {
+    display: initial;
+  }
+  .homepage-content{
+    margin: 0;
+  }
+  .bio-bar-portfolio {
+    margin: 0 250px;
+  }
+  footer {
+    margin: 0 250px;
+  }
+  .bio-bar {
+    height: auto;
+    margin: auto;
+  }
+  .projects-container {
+    margin: initial;
+  }
+}
+
+@media (max-width: 850px) {
+  .bio-bar-portfolio {
+    margin: 0 200px;
+  }
+  footer {
+    margin: 0 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  .bio-bar-portfolio {
+    margin: 0 150px;
+  }
+  footer {
+    margin: 0 150px;
+  }
+}
+
+@media (max-width: 650px) {
+  .bio-bar-portfolio {
+    margin: 0 100px;
+  }
+  footer {
+    margin: 0 100px;
+  }
 }

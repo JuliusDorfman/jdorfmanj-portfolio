@@ -11,24 +11,20 @@ export default class Experience extends Component {
             <div className="about-me-content-column">
               <h3>KNOWLEDGE</h3>
               <ul>
-                <li className="about-me-list-item">
+                <li>
                   <p>HTML5</p>
                 </li>
                 <li>
                   <p>CSS3</p>
-                  <span />
                 </li>
                 <li>
                   <p>JAVASCRIPT</p>
-                  <span />
                 </li>
                 <li>
                   <p>REACT</p>
-                  <span />
                 </li>
                 <li>
                   <p>NODE</p>
-                  <span />
                 </li>
               </ul>
             </div>
@@ -37,22 +33,15 @@ export default class Experience extends Component {
               <ul>
                 <li>
                   <p>UI/UX</p>
-                  <span />
                 </li>
                 <li>
                   <p>RESPONSIVE DESIGN</p>
-                  <span />
                 </li>
                 <li>
                   <p>PHOTOSHOP</p>
-                  <span />
                 </li>
                 <li>
                   <p>API DEVELOPMENT</p>
-                </li>
-                <span />
-                <li>
-                  <p></p>
                 </li>
               </ul>
             </div>
@@ -61,19 +50,15 @@ export default class Experience extends Component {
               <ul>
                 <li>
                   <p>LIFTING HEAVY STUFF</p>
-                  <span />
                 </li>
                 <li>
                   <p>FISHKEEPING</p>
-                  <span />
                 </li>
                 <li>
                   <p>MANGA & ANIME</p>
-                  <span />
                 </li>
                 <li>
-                  <p></p>
-                  <span />
+                  <p>BEER</p>
                 </li>
               </ul>
             </div>

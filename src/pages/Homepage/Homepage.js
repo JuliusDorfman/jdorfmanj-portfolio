@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
 import Experience from '../../components/Experience';
 import Portfolio from '../../components/Portfolio';
 import './Homepage.css';
@@ -50,6 +48,7 @@ export default class Homepage extends Component {
         this.setState({ showExperience: false });
       }
     }
+    
   }
 
   render() {
@@ -63,25 +62,27 @@ export default class Homepage extends Component {
               <h2>Web Developer</h2>
               <ul className="work-intro-flavor">
                 <li>
-                  Design
+                  <p>Design</p>
                 </li>
                 <li>
-                  Development
+                  <p>Development</p>
                 </li>
                 <li>
-                  Passion & Creativity
+                  <p>Passion & Creativity</p>
                 </li>
               </ul>
             </div>
             <div className="bio-bar-portfolio">
               <h3>Portfolio</h3>
-              <p>I am a Full-Stack Developer. </p>
+              <p>I am a Full-Stack Developer with a true <span className="orange-highlight">passion</span> for creating. I strive to be an individual who is appreciated for his <span className="orange-highlight">work ethic</span> and <span className="blue-highlight">flexibility</span>.
+                My mark as a developer is <span className="blue-highlight">integrity</span> and <span className="orange-highlight">quality</span>.
+              </p>
             </div>
 
             <footer>
               <h3>Contact Me</h3>
               <ul className="footer-info">
-                <li>DOB:</li><li>1991</li>
+                <li>DOB:</li><li>xx / xx / 1991</li>
                 <li>LOCATION:</li><li>California</li>
                 <li>PHONE:</li><li>(858) 345-0259</li>
                 <li>EMAIL: </li><li>JuliusDorfman@gmail.com</li>
