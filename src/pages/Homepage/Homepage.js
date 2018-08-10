@@ -96,8 +96,8 @@ export default class Homepage extends Component {
         </div>
 
         <div className="homepage-content-wrapper">
+        <div className="homepage-sliding-door" />
           <div className="homepage-content">
-
             <div className="content-navbar-wrapper">
               <ul className="content-navbar">
                 <li onClick={this.handleRender} value="portfolio">PORTFOLIO</li>

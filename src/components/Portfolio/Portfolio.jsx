@@ -26,7 +26,7 @@ export default class Portfolio extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fas fa-link"></i>
+                        LINK
                       </a>
                       <a href="https://github.com/JuliusDorfman/news-from.git"
                         target="_blank"
@@ -52,7 +52,7 @@ export default class Portfolio extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fas fa-link"></i>
+                        LINK
                       </a>
                       <a href="https://github.com/JuliusDorfman/imagEdits.git"
                         target="_blank"
@@ -80,7 +80,7 @@ export default class Portfolio extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fas fa-link"></i>
+                        LINK
                       </a>
                       <a href="https://github.com/JuliusDorfman/crystal-numbers"
                         target="_blank"
@@ -106,7 +106,7 @@ export default class Portfolio extends Component {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <i className="fas fa-link"></i>
+                        LINK
                       </a>
                       <a href="https://github.com/JuliusDorfman/liri-node-app"
                         target="_blank"
