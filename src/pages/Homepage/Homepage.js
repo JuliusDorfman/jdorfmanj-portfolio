@@ -30,6 +30,7 @@ export default class Homepage extends Component {
         this.setState({ showAboutme: false })
       } else {
         this.setState({ showPortfolio: false });
+        this.setState({ showAboutme: true })
       }
     }
 
@@ -40,6 +41,7 @@ export default class Homepage extends Component {
         this.setState({ showAboutme: false })
       } else {
         this.setState({ showExperience: false });
+        this.setState({ showAboutme: true })
       }
     }
 
@@ -56,6 +58,7 @@ export default class Homepage extends Component {
   }
 
   render() {
+
     return (
       <div className="homepage-component">
 
@@ -86,7 +89,6 @@ export default class Homepage extends Component {
             <footer>
               <h3>Contact Me</h3>
               <ul className="footer-info">
-                <li>DOB:</li><li>xx / xx / 1991</li>
                 <li>LOCATION:</li><li>California</li>
                 <li>PHONE:</li><li>(858) 345-0259</li>
                 <li>EMAIL: </li><li>JuliusDorfman@gmail.com</li>
@@ -96,7 +98,7 @@ export default class Homepage extends Component {
         </div>
 
         <div className="homepage-content-wrapper">
-        <div className="homepage-sliding-door" />
+          <div className="homepage-sliding-door" />
           <div className="homepage-content">
             <div className="content-navbar-wrapper">
               <ul className="content-navbar">

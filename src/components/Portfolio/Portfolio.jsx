@@ -9,6 +9,7 @@ export default class Portfolio extends Component {
         <div className="portfolio-container">
           <div className="projects-container">
             <div className="project-group">
+
               <div className="project-wrapper">
                 <div className="project-overlay">
                   <div className="project-center">
@@ -62,27 +63,29 @@ export default class Portfolio extends Component {
                   </div>
                 </div>
               </div>
+
             </div>
             <div className="project-group">
+
               <div className="project-wrapper">
                 <div className="project-overlay">
                   <div className="project-center">
-                    <h3>Crystal Game</h3>
-                    <p>A "Fun" numbers game</p>
+                    <h3>My Hearthstone Addiction</h3>
+                    <p>Commitment Quantifier</p>
                     <div className="project-technology-icons">
-                      <i className="fab fa-js-square"></i>
-                      <i className="fab fa-npm"></i>
+                      <i className="fab fa-react"></i>
+                      <i className="fab fa-node"></i>
                     </div>
                     <div className="project-links">
 
                       <a
-                        href="https://crystal-numbers.herokuapp.com/"
+                        href="https://hstone-app.herokuapp.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         LINK
                       </a>
-                      <a href="https://github.com/JuliusDorfman/crystal-numbers"
+                      <a href="https://github.com/JuliusDorfman/stone-lore.git"
                         target="_blank"
                         rel="noopener noreferrer"
                       >SRC</a>
@@ -100,7 +103,6 @@ export default class Portfolio extends Component {
                       <i className="fab fa-npm"></i>
                     </div>
                     <div className="project-links">
-
                       <a
                         href="https://github.com/JuliusDorfman/liri-node-app"
                         target="_blank"
@@ -116,6 +118,36 @@ export default class Portfolio extends Component {
                   </div>
                 </div>
               </div>
+
+            </div>
+            <div className="project-group">
+
+              <div className="project-wrapper">
+                <div className="project-overlay">
+                  <div className="project-center">
+                    <h3>Crystal Game</h3>
+                    <p>A "Fun" numbers game</p>
+                    <div className="project-technology-icons">
+                      <i className="fab fa-js-square"></i>
+                      <i className="fab fa-npm"></i>
+                    </div>
+                    <div className="project-links">
+                      <a
+                        href="https://crystal-numbers.herokuapp.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        LINK
+                      </a>
+                      <a href="https://github.com/JuliusDorfman/crystal-numbers"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >SRC</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
