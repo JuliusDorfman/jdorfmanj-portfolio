@@ -11,8 +11,6 @@ export default class DigitalCard extends Component {
     let lineWrapperBack = document.getElementsByClassName('line-wrappers-back')[0]
     let bluelineWrapperBack = document.getElementsByClassName("orange-line-flavor-back")[0]
     let orangelineWrapperBack = document.getElementsByClassName("blue-line-flavor-back")[0]
-    
-
 
     digitalCardContainer.addEventListener('click', () => {
       if (digitalCard.style.transform === "scaleX(-1)") {
@@ -35,11 +33,9 @@ export default class DigitalCard extends Component {
 
   render() {
 
-
     return (
       <div className="digital-card-component">
         <div className="digital-card-container">
-
 
           <div className="digital-card">
             <div className="card-content">

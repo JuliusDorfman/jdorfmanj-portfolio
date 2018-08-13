@@ -75,7 +75,7 @@ export default class Homepage extends Component {
                   <p>Development</p>
                 </li>
                 <li>
-                  <p>Passion & Creativity</p>
+                  <p>Passion &amp; Creativity</p>
                 </li>
               </ul>
             </div>
