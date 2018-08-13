@@ -101,7 +101,7 @@ export default class AboutMe extends Component {
                   <p>FISHKEEPING <i className="fas fa-fish"></i></p>
                 </li>
                 <li>
-                  <p>MANGA & ANIME</p>
+                  <p>MANGA &amp; ANIME</p>
                 </li>
                 <li>
                   <p>BEER <i className="fas fa-beer"></i></p>
