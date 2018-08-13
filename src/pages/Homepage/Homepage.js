@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Experience from '../../components/Experience';
+import AboutMe from '../../components/AboutMe';
 import Portfolio from '../../components/Portfolio';
-import Aboutme from '../../components/Aboutme';
+import DigitalCard from '../../components/DigitalCard';
 import './Homepage.css';
 
 export default class Homepage extends Component {
@@ -9,8 +9,8 @@ export default class Homepage extends Component {
     super(props);
     this.state = {
       showPortfolio: false,
-      showExperience: false,
-      showAboutme: true
+      showAboutMe: false,
+      showDigitalCard: true
     }
     this.handleRender = this.handleRender.bind(this);
   }
@@ -26,32 +26,32 @@ export default class Homepage extends Component {
     if (e.target.getAttribute("value") === "portfolio") {
       if (this.state.showPortfolio === false) {
         this.setState({ showPortfolio: true });
-        this.setState({ showExperience: false })
-        this.setState({ showAboutme: false })
+        this.setState({ showAboutMe: false })
+        this.setState({ showDigitalCard: false })
       } else {
         this.setState({ showPortfolio: false });
-        this.setState({ showAboutme: true })
-      }
-    }
-
-    if (e.target.getAttribute("value") === "experience") {
-      if (this.state.showExperience === false) {
-        this.setState({ showExperience: true });
-        this.setState({ showPortfolio: false })
-        this.setState({ showAboutme: false })
-      } else {
-        this.setState({ showExperience: false });
-        this.setState({ showAboutme: true })
+        this.setState({ showDigitalCard: true })
       }
     }
 
     if (e.target.getAttribute("value") === "aboutme") {
-      if (this.state.showAboutme === false) {
-        this.setState({ showAboutme: true })
-        this.setState({ showExperience: false });
+      if (this.state.showAboutMe === false) {
+        this.setState({ showAboutMe: true });
+        this.setState({ showPortfolio: false })
+        this.setState({ showDigitalCard: false })
+      } else {
+        this.setState({ showAboutMe: false });
+        this.setState({ showDigitalCard: true })
+      }
+    }
+
+    if (e.target.getAttribute("value") === "digitalcard") {
+      if (this.state.showDigitalCard === false) {
+        this.setState({ showDigitalCard: true })
+        this.setState({ showAboutMe: false });
         this.setState({ showPortfolio: false })
       } else {
-        this.setState({ showExperience: false });
+        this.setState({ showAboutMe: false });
       }
     }
 
@@ -103,8 +103,8 @@ export default class Homepage extends Component {
             <div className="content-navbar-wrapper">
               <ul className="content-navbar">
                 <li onClick={this.handleRender} value="portfolio">PORTFOLIO</li>
-                <li onClick={this.handleRender} value="experience">EXPERIENCE</li>
                 <li onClick={this.handleRender} value="aboutme">ABOUT ME</li>
+                <li onClick={this.handleRender} value="digitalcard">My Card</li>
               </ul>
             </div>
 
@@ -116,16 +116,16 @@ export default class Homepage extends Component {
                 <span />
             }
             {
-              this.state.showExperience
+              this.state.showAboutMe
                 ?
-                <Experience />
+                <AboutMe />
                 :
                 <span />
             }
             {
-              this.state.showAboutme
+              this.state.showDigitalCard
                 ?
-                <Aboutme />
+                <DigitalCard />
                 :
                 <span />
             }

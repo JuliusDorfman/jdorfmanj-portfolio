@@ -158,16 +158,7 @@ h3 {
   color: rgb(70, 120, 160);
 }
 
-@media (max-width: 1100px) {
-  .homepage-landing {
-    flex-direction: column;
-  }
-  .work-intro-details>li>p {
-    line-height: 1;
-  }
-}
-
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .homepage-component {
     display: initial;
   }
@@ -220,7 +211,7 @@ h3 {
   .content-navbar>li {
     display: block;
   }
-  .digital-card {
+  .digital-card-container {
     transform: rotate(90deg);
   }
 }
