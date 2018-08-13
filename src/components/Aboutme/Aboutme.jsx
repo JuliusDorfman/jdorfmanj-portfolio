@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CircleChart from 'circle-chart'
-import './AboutMe.css';
+import './Aboutme.css';
 
 export default class AboutMe extends Component {
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AboutMe from '../../components/AboutMe';
+import Aboutme from '../../components/Aboutme';
 import Portfolio from '../../components/Portfolio';
 import DigitalCard from '../../components/DigitalCard';
 import './Homepage.css';
@@ -118,7 +118,7 @@ export default class Homepage extends Component {
             {
               this.state.showAboutMe
                 ?
-                <AboutMe />
+                <Aboutme />
                 :
                 <span />
             }
