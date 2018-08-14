@@ -26,30 +26,30 @@ export default class Homepage extends Component {
     if (e.target.getAttribute("value") === "portfolio") {
       if (this.state.showPortfolio === false) {
         this.setState({ showPortfolio: true });
-        this.setState({ showAboutMe: false })
-        this.setState({ showDigitalCard: false })
+        this.setState({ showAboutMe: false });
+        this.setState({ showDigitalCard: false });
       } else {
         this.setState({ showPortfolio: false });
-        this.setState({ showDigitalCard: true })
+        this.setState({ showDigitalCard: true });
       }
     }
 
     if (e.target.getAttribute("value") === "aboutme") {
       if (this.state.showAboutMe === false) {
         this.setState({ showAboutMe: true });
-        this.setState({ showPortfolio: false })
-        this.setState({ showDigitalCard: false })
+        this.setState({ showPortfolio: false });
+        this.setState({ showDigitalCard: false });
       } else {
         this.setState({ showAboutMe: false });
-        this.setState({ showDigitalCard: true })
+        this.setState({ showDigitalCard: true });
       }
     }
 
     if (e.target.getAttribute("value") === "digitalcard") {
       if (this.state.showDigitalCard === false) {
-        this.setState({ showDigitalCard: true })
+        this.setState({ showDigitalCard: true });
         this.setState({ showAboutMe: false });
-        this.setState({ showPortfolio: false })
+        this.setState({ showPortfolio: false });
       } else {
         this.setState({ showAboutMe: false });
       }

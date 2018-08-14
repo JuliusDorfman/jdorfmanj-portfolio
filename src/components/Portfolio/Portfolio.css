@@ -3,6 +3,15 @@
   overflow: auto;
 }
 
+.portfolio-component * {
+  color: rgb(70, 70, 70);
+}
+
+.portfolio-component .project-flex-item-intro *,
+.project-flex-item-content * {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .project-group {
   display: flex;
   flex-wrap: wrap;
@@ -28,7 +37,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem;
-  width: 18rem;
+  width: 80%;
   border: 1px solid black;
   border-radius: 12px;
   background: rgba(80, 80, 80, .1);
@@ -72,15 +81,122 @@
 
 .project-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 1rem 1.5rem;
 }
 
 .project-links>a {
+  background: rgba(50, 50, 50, .8);
   text-decoration: none;
+  margin: 0 2rem;
   transition: .5s;
+  color: rgba(240, 240, 240, 1);
+  padding: 2%;
+  border-radius: 2px;
 }
 
 .project-links>a:hover {
   color: rgb(225, 130, 80);
+}
+
+.project-introduction>h5 {
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+.project-introduction>h3 {
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
+.project-introduction>* {
+  text-align: left;
+  padding-left: 4%;
+}
+
+.project-content {
+  padding: 0 2%;
+  text-align: left;
+}
+
+.project-content>ul {
+  list-style-type: circle;
+}
+
+.project-content>p {
+  font-size: 15px;
+  width: 500px;
+  padding-left: 2%;
+  margin-bottom: 35px;
+}
+
+.project-flex-container {
+  display: flex;
+  padding: 0 2%;
+}
+
+.project-flex-item-intro {
+  flex: 1;
+  padding-top: 2%;
+}
+
+.project-flex-item-content {
+  flex: 8;
+}
+
+.project-flex-item-technologies {
+  flex: 1;
+  border-left: 1px solid gray;
+}
+
+.project-flex-item-technologies>ul {
+  list-style: none;
+  font-size: 25px;
+  padding-top: 40px;
+  padding-left: 0;
+}
+
+.project-flex-item-technologies>ul>li {
+  padding-top: 20px;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-details>li {
+  font-size: 12px;
+}
+
+.project-image {
+  height: 200px;
+}
+
+/* Project-Timeline */
+
+.project-timeline {
+  border-right: 1px solid gray;
+  text-align: right;
+}
+
+/* .project-date::after {
+  display: inline-block;
+  content: " ";
+  margin-bottom: 3px;
+  height: 5px;
+  width: 5px;
+  background: rgb(225, 130, 80);
+} */
+
+@media (max-width: 1100px) {
+  .project-content>* {
+    width: 80%;
+  }
+  .project-content>p {
+    width: 80%;
+  }
+  .project-image {
+    height: auto;
+    width: 300px;
+  }
 }
