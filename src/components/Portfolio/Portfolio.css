@@ -160,8 +160,42 @@
   padding-top: 20px;
 }
 
+.pitch-title {
+  font-size: 18px;
+}
+
 .project-details {
   width: 500px;
+}
+
+.pitch {
+  padding-top: 5px;
+}
+
+.pitch-contact {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.pitch-contact>a {
+  text-decoration: none;
+}
+
+.pitch-tech {
+  color: rgba(220, 220, 220, 0)
+}
+
+.click-contact {
+  cursor: pointer;
+  color: rgba(220, 220, 220, 1);
+  background: rgba(50, 50, 50, 1);
+  border-radius: 3px;
+  padding: 1%;
+  transition: .5s;
+}
+
+.click-contact:hover {
+  color: rgb(90, 150, 190);
 }
 
 .project-details>li {

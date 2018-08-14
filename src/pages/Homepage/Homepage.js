@@ -87,7 +87,7 @@ export default class Homepage extends Component {
             </div>
 
             <footer>
-              <h3>Contact Me</h3>
+              <h3 id="contact-me">Contact Me</h3>
               <ul className="footer-info">
                 <li>LOCATION:</li><li>California</li>
                 <li>PHONE:</li><li>(858) 345-0259</li>

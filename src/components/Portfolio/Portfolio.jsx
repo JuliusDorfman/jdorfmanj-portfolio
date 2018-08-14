@@ -2,9 +2,52 @@ import React, { Component } from 'react';
 import './Portfolio.css';
 
 export default class Portfolio extends Component {
+
+
+  normal(e){
+    let footerElement = document.getElementsByTagName('footer')[0];
+    footerElement.style.color = "rgb(220, 220, 220)";
+  }
+
+  componentDidMount(e) {
+    let contactElement = document.getElementsByClassName('click-contact')[0];
+    let footerElement = document.getElementsByTagName('footer')[0];
+
+    contactElement.addEventListener('click', () => {
+      footerElement.style.color = "rgb(225, 130, 80)";
+      window.setTimeout(this.normal, 150)
+    })
+  }
+
   render() {
     return (
       <div className="portfolio-component">
+
+
+        <article className="project-flex-container">
+          <div className="project-flex-item-intro project-timeline pitch">
+            <div className="project-date"></div>
+          </div>
+          <div className="project-flex-item-content">
+            <div className="project-introduction">
+              <h5 className="pitch-title">Looking for a Full-Stack Developer?</h5>
+              <p className="pitch-contact"><a href="#contact-me"><span className="click-contact">Contact me</span></a> I'll always respond to you within 24 hours.</p>
+              <p className="pitch-contact"></p>
+            </div>
+            <div className="project-content"></div>
+            <div className="project-links"></div>
+          </div>
+          <div className="project-flex-item-technologies">
+            <ul className="technologies-list">
+              <li>
+                <i className="fab fa-react pitch-tech"></i>
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </article>
+
+        <hr />
 
         <article className="project-flex-container">
           <div className="project-flex-item-intro project-timeline">
