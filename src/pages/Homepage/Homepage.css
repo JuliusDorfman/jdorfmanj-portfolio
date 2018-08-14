@@ -99,6 +99,10 @@ h3 {
   z-index: 100;
 }
 
+footer{
+  transition: .75s;
+}
+
 .footer-info {
   display: grid;
   grid-template-columns: 1fr 1fr;

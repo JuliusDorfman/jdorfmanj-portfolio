@@ -6,7 +6,7 @@ export default class Portfolio extends Component {
 
   normal(e){
     let footerElement = document.getElementsByTagName('footer')[0];
-    footerElement.style.color = "rgb(220, 220, 220)";
+    footerElement.style.transform = "scale(1, 1)";
   }
 
   componentDidMount(e) {
@@ -14,8 +14,8 @@ export default class Portfolio extends Component {
     let footerElement = document.getElementsByTagName('footer')[0];
 
     contactElement.addEventListener('click', () => {
-      footerElement.style.color = "rgb(225, 130, 80)";
-      window.setTimeout(this.normal, 150)
+      footerElement.style.transform = "scale(2, 2)";
+      window.setTimeout(this.normal, 500)
     })
   }
 
