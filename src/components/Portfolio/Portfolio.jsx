@@ -4,7 +4,7 @@ import './Portfolio.css';
 export default class Portfolio extends Component {
 
 
-  normal(e){
+  normal(e) {
     let footerElement = document.getElementsByTagName('footer')[0];
     footerElement.style.transform = "scale(1, 1)";
   }
@@ -31,7 +31,11 @@ export default class Portfolio extends Component {
           <div className="project-flex-item-content">
             <div className="project-introduction">
               <h5 className="pitch-title">Looking for a Full-Stack Developer?</h5>
-              <p className="pitch-contact"><a href="#contact-me"><span className="click-contact">Contact me</span></a> I'll always respond to you within 24 hours.</p>
+              <p className="pitch-contact">
+                <a>
+                  <span className="click-contact">&nbsp;Contact me</span>
+                </a>
+                I'll always respond to you within 24 hours.</p>
               <p className="pitch-contact"></p>
             </div>
             <div className="project-content"></div>
