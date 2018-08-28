@@ -99,7 +99,7 @@ h3 {
   z-index: 100;
 }
 
-footer{
+footer {
   transition: .75s;
 }
 
@@ -156,10 +156,16 @@ footer{
 
 .orange-highlight {
   color: rgb(225, 130, 80);
+  font-weight: 700;
 }
 
 .blue-highlight {
   color: rgb(70, 120, 160);
+  font-weight: 700;
+}
+
+#my-card-nav {
+  float: right;
 }
 
 @media (max-width: 900px) {
@@ -217,5 +223,8 @@ footer{
   }
   .digital-card-container {
     transform: rotate(90deg);
+  }
+  #my-card-nav {
+    float: initial;
   }
 }

@@ -68,6 +68,11 @@
   padding: 1rem 1.5rem;
 }
 
+.first-word-highlight {
+  font-size: 2rem;
+  display: block;
+}
+
 .project-technology-icons {
   display: flex;
   justify-content: space-evenly;
@@ -137,7 +142,6 @@
 
 .project-flex-item-intro {
   flex: 1;
-  padding-top: 2%;
 }
 
 .project-flex-item-content {
@@ -233,4 +237,7 @@
     height: auto;
     width: 300px;
   }
+.first-word-highlight {
+  font-size: 24px;
+}
 }

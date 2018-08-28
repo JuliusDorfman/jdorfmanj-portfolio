@@ -104,7 +104,7 @@ export default class Homepage extends Component {
               <ul className="content-navbar">
                 <li onClick={this.handleRender} value="portfolio">PORTFOLIO</li>
                 <li onClick={this.handleRender} value="aboutme">ABOUT ME</li>
-                <li onClick={this.handleRender} value="digitalcard">My Card</li>
+                <li id="my-card-nav" onClick={this.handleRender} value="digitalcard">CARD</li>
               </ul>
             </div>
 

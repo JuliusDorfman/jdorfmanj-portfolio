@@ -58,12 +58,12 @@ export default class Portfolio extends Component {
             <div className="project-date">Aug 2018</div>
           </div>
           <div className="project-flex-item-content">
-            <div className="project-introduction">
+            {/* <div className="project-introduction">
               <h3>My Hearthstone Addiction</h3>
               <h5>Commitment Quantifier</h5>
-            </div>
+            </div> */}
             <div className="project-content">
-              <p>MHA is an application that aims to quantify the sunk cost of your
+              <p><span className="first-word-highlight">My Hearthstone Addiction</span> is an application that aims to quantify the sunk cost of your
                 Hearthstone commitment in terms of time and money.</p>
               <ul className="project-details">
                 <li>As The World Health Organization begins to recognize Video Game Addiction as an
@@ -104,12 +104,12 @@ export default class Portfolio extends Component {
             <div className="project-date">Jul 2018</div>
           </div>
           <div className="project-flex-item-content">
-            <div className="project-introduction">
+            {/* <div className="project-introduction">
               <h3>News-From</h3>
               <h5>Headlines as Data</h5>
-            </div>
+            </div> */}
             <div className="project-content">
-              <p>News-From is an application that allows
+              <p><span className="first-word-highlight">News-From</span> is an application that allows
                 you to search headlines for keywords accross
                 multiple different news organizations and see
               who is talking about what.</p>
@@ -153,12 +153,12 @@ export default class Portfolio extends Component {
             <div className="project-date">Jun 2018</div>
           </div>
           <div className="project-flex-item-content">
-            <div className="project-introduction">
+            {/* <div className="project-introduction">
               <h3>imagEdits</h3>
               <h5>Online Image Editor</h5>
-            </div>
+            </div> */}
             <div className="project-content">
-              <p>imagEdits (pronounced Image Edits) is a simple browser based image
+              <p><span className="first-word-highlight">imagEdits</span> (pronounced Image Edits) is a simple browser based image
                 editor.
               </p>
               <ul className="project-details">
@@ -197,15 +197,15 @@ export default class Portfolio extends Component {
 
         <article className="project-flex-container">
           <div className="project-flex-item-intro project-timeline">
-            <div className="project-date">March 2018</div>
+            <div className="project-date">Mar 2018</div>
           </div>
           <div className="project-flex-item-content">
-            <div className="project-introduction">
+            {/* <div className="project-introduction">
               <h3>Crystal Game</h3>
               <h5>A "Fun" Numbers Game</h5>
-            </div>
+            </div> */}
             <div className="project-content">
-              <p>Crystal Game is a browser based number addition game with a fun theme and simple premise.
+              <p><span className="first-word-highlight">Crystal Game</span> is a browser based number addition game with a fun theme and simple premise.
               </p>
               <ul className="project-details">
                 <li>This was my very first application.</li>
