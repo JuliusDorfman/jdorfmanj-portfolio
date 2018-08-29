@@ -64,6 +64,42 @@ export default class Homepage extends Component {
 
         <div className="bio-bar-wrapper">
           <div className="bio-bar">
+            <div className="bio-bar-divets">
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
             <div className="bio-bar-content">
               <h1>Julius G. Dorfman</h1>
               <h2>Web Developer</h2>
@@ -98,7 +134,7 @@ export default class Homepage extends Component {
         </div>
 
         <div className="homepage-content-wrapper">
-          <div className="homepage-sliding-door" />
+          {/* <div className="homepage-sliding-door"> <button onClick={this.openMe}/></div> */}
           <div className="homepage-content">
             <div className="content-navbar-wrapper">
               <ul className="content-navbar">
