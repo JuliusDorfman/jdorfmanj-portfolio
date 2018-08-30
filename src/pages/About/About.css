@@ -28,6 +28,12 @@
   justify-content: space-around;
   text-align: center;
   color: rgb(55, 55, 55);
+  margin-top: 30px;
+  padding: 0 40px;
+}
+
+.about-me-content>.flex-container {
+  flex: 1;
 }
 
 .about-me-content-column h3 {

@@ -13,6 +13,7 @@ export default class Homepage extends Component {
       showDigitalCard: true
     }
     this.handleRender = this.handleRender.bind(this);
+    // this.openMe = this.openMe.bind(this);
   }
 
 
@@ -54,8 +55,15 @@ export default class Homepage extends Component {
         this.setState({ showAboutMe: false });
       }
     }
-
   }
+
+  // openMe() {
+  //   console.log("clicked")
+  //   let slidingDoor = document.getElementsByClassName('homepage-sliding-door')[0];
+
+  //   slidingDoor.style.marginLeft = "1500px";
+  // }
+
 
   render() {
 
@@ -134,7 +142,12 @@ export default class Homepage extends Component {
         </div>
 
         <div className="homepage-content-wrapper">
-          {/* <div className="homepage-sliding-door"> <button onClick={this.openMe}/></div> */}
+          {/* <div className="homepage-sliding-door">
+            <span>
+              <p>Come in!</p>
+              <i className="arrow-open far fa-caret-square-right" onClick={this.openMe}></i>
+            </span>
+          </div> */}
           <div className="homepage-content">
             <div className="content-navbar-wrapper">
               <ul className="content-navbar">
